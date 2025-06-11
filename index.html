@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetPantry - Premium Food for Your Beloved Pets</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <i class="fas fa-paw"></i>
+        <span>PetPantry</span>
+      </div>
+      <div class="mobile-toggle" id="mobileToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+        <ul id="navMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Premium Nutrition for Your Beloved Pets</h1>
+      <p>Discover our wide range of natural, organic, and vet-approved pet food to keep your furry friends healthy and
+        happy.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="products">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Products</h2>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="dog">Dog Food</button>
+        <button class="filter-btn" data-filter="cat">Cat Food</button>
+        <button class="filter-btn" data-filter="bird">Bird Food</button>
+        <button class="filter-btn" data-filter="fish">Fish Food</button>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card" data-category="dog">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=1470&auto=format&fit=crop"
+              alt="Premium Dog Food">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Dog Food</div>
+            <h3 class="product-name">Grain-Free Chicken Recipe</h3>
+            <p class="product-description">High-protein, grain-free formula with real chicken for active dogs.</p>
+            <div class="product-footer">
+              <div class="product-price">$24.99</div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="cat">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1574235664854-92e1da7d8a66?q=80&w=1470&auto=format&fit=crop"
+              alt="Premium Cat Food">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Cat Food</div>
+            <h3 class="product-name">Salmon & Tuna Blend</h3>
+            <p class="product-description">Grain-free recipe with wild-caught salmon and tuna for optimal feline health.
+            </p>
+            <div class="product-footer">
+              <div class="product-price">$19.99</div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="bird">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1562751362-5e3a6d4cbe0e?q=80&w=1470&auto=format&fit=crop"
+              alt="Bird Food">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Bird Food</div>
+            <h3 class="product-name">Tropical Seed Mix</h3>
+            <p class="product-description">Nutrient-rich blend of seeds, fruits, and vegetables for exotic birds.</p>
+            <div class="product-footer">
+              <div class="product-price">$14.99</div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="fish">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?q=80&w=1470&auto=format&fit=crop"
+              alt="Fish Food">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Fish Food</div>
+            <h3 class="product-name">Aquatic Flakes</h3>
+            <p class="product-description">Complete nutrition for freshwater and saltwater fish with natural color
+              enhancers.</p>
+            <div class="product-footer">
+              <div class="product-price">$9.99</div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About PetPantry</h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=1470&auto=format&fit=crop"
+            alt="Our Store">
+        </div>
+        <div class="about-text">
+          <h3>We Care About Your Pets</h3>
+          <p>Founded in 2010, PetPantry has been dedicated to providing premium nutrition for pets of all kinds. We
+            believe that pets are family, and they deserve the best care possible.</p>
+          <p>Our carefully curated selection of pet foods is sourced from trusted suppliers who share our commitment to
+            quality, sustainability, and animal welfare.</p>
+          <p>All products are rigorously tested to ensure they meet our high standards for nutritional value and safety.
+          </p>
+          <a href="#contact" class="btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <div class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Our Location</h4>
+              <p>123 Pet Street, Animal City, AC 12345</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h4>Phone Number</h4>
+              <p>(123) 456-7890</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email Address</h4>
+              <p>info@petpantry.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Monday-Friday: 9am - 8pm</p>
+              <p>Saturday-Sunday: 10am - 6pm</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" required>
+              <div class="error" id="nameError">Please enter your name</div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required>
+              <div class="error" id="emailError">Please enter a valid email</div>
+            </div>
+            <div class="form-group">
+              <label for="petType">Pet Type</label>
+              <select id="petType" required>
+                <option value="">Select a pet type</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+                <option value="fish">Fish</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="error" id="petTypeError">Please select a pet type</div>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" required></textarea>
+              <div class="error" id="messageError">Please enter your message</div>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+            <div class="success-message" id="successMessage">
+              Thank you! Your message has been sent successfully.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>PetPantry</h4>
+          <p>Providing premium nutrition for your beloved pets since 2010. Quality ingredients, sustainable sourcing,
+            and happy pets.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Shopping Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Pet Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#">Dog Food</a></li>
+            <li><a href="#">Cat Food</a></li>
+            <li><a href="#">Bird Food</a></li>
+            <li><a href="#">Fish Food</a></li>
+            <li><a href="#">Small Pets</a></li>
+            <li><a href="#">Reptile Food</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for special offers and pet care tips.</p>
+          <form class="newsletter-form">
+            <div class="form-group">
+              <input type="email" placeholder="Your Email Address" required>
+            </div>
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2023 PetPantry. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js">
+
+  </script>
+</body>
+
+</html>
